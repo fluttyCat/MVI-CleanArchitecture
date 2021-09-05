@@ -1,19 +1,23 @@
 object Dependencies {
 
-    const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:_"
+    const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
+    const val core = "androidx.core:core-ktx:${Versions.core}"
+    const val appCompat = "com.android.support:appcompat-v7:${Versions.appCompat}"
+    const val material = "com.google.android.material:material:${Versions.material}"
+    const val constraintLayout =
+        "com.android.support.constraint:constraint-layout:${Versions.constraintLayout}"
+    const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
+
+
     const val kotlinCoroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:_"
     const val kotlinCoroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:_"
     const val kotlinCoroutinesDebug = "org.jetbrains.kotlinx:kotlinx-coroutines-debug:_"
     const val coroutineLifecycleHandler = "com.github.hadilq:coroutinelifecyclehandler:_"
 
-    const val appCompat = "com.android.support:appcompat-v7:_"
     const val design = "com.android.support:design:_"
     const val supportAnnotations = "com.android.support:support-annotations:_"
     const val cardView = "com.android.support:cardview-v7:_"
     const val recyclerview = "androidx.recyclerview:recyclerview:_"
-    const val material = "com.google.android.material:material:_"
-    const val constraintLayout = "com.android.support.constraint:constraint-layout:_"
-    const val timber = "com.jakewharton.timber:timber:_"
     const val dagger = "com.google.dagger:dagger:_"
     const val daggerCompiler = "com.google.dagger:dagger-compiler:_"
     const val daggerAndroid = "com.google.dagger:dagger-android:_"
@@ -69,7 +73,7 @@ object Dependencies {
     const val testGoogleTruth = "com.google.truth:truth:_"
     const val espressoCore = "androidx.test.espresso:espresso-core:_"
 
-    const val jUnit = "junit:junit:_"
+    const val jUnit = "junit:junit:${Versions.jUnit}"
     const val mockitoCore = "org.mockito:mockito-core:_"
     const val mockitoKotlin = "com.nhaarman.mockitokotlin2:mockito-kotlin:_"
     const val coroutinesTest = "org.jetbrains.kotlinx:kotlinx-coroutines-test:_"
