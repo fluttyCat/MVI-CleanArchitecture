@@ -9,4 +9,8 @@ object ConfigData {
     const val applicationId = "com.fluttycatgeek.mvi_cleanarchitecture"
     const val DEBUG = "debug"
     const val RELEASE = "release"
+
+    const val versionMajor = 1
+    const val versionMinor = 1
+    const val versionPatch = 9
 }
