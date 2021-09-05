@@ -8,7 +8,8 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    buildToolsVersion(ConfigData.buildToolsVersion)
+    compileSdkVersion(ConfigData.compileSdkVersion)
 
     defaultConfig {
         applicationId "com.fluttycatgeek.mvi_cleanarchitecture"
