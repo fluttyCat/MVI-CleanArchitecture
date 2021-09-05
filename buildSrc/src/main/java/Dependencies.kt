@@ -1,14 +1,3 @@
-/**
- * To define plugins
- */
-object BuildPlugins {
-    const val androidGradle = "com.android.tools.build:gradle:${Versions.gradlePlugin}"
-    const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
-}
-
-/**
- * To define dependencies
- */
 object Libs {
 
     const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:_"
@@ -72,9 +61,7 @@ object Libs {
     const val multidex = "com.android.support:multidex:_"
 
 
-}
-
-object TestLibs {
+    /*test */
     const val testRunner = "androidx.test:runner:_"
     const val testRules = "androidx.test:rules:_"
     const val testExtJunit = "androidx.test.ext:junit:_"
@@ -87,6 +74,7 @@ object TestLibs {
     const val mockitoKotlin = "com.nhaarman.mockitokotlin2:mockito-kotlin:_"
     const val coroutinesTest = "org.jetbrains.kotlinx:kotlinx-coroutines-test:_"
     const val androidArchCoreTesting = "android.arch.core:core-testing:_"
+
 }
 
 
