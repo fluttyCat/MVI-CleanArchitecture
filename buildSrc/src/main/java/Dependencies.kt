@@ -1,4 +1,4 @@
-object Deps {
+object Dependencies {
 
     const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:_"
     const val kotlinCoroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:_"
