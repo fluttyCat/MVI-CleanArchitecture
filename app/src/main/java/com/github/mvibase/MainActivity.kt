@@ -1,7 +1,8 @@
-package com.fluttycatgeek.mvi_cleanarchitecture
+package com.github.mvibase
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.fluttycatgeek.mvi_cleanarchitecture.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
