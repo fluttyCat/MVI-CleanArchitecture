@@ -8,7 +8,12 @@ object Dependencies {
         "com.android.support.constraint:constraint-layout:${Versions.constraintLayout}"
     const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
 
+    /*hilt*/
+    const val hilt = "com.google.dagger:hilt-android:${Versions.hilt}"
+    const val hiltKapt = "com.google.dagger:hilt-android-compiler:${Versions.hilt}"
 
+
+    /* coroutines*/
     const val kotlinCoroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:_"
     const val kotlinCoroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:_"
     const val kotlinCoroutinesDebug = "org.jetbrains.kotlinx:kotlinx-coroutines-debug:_"
@@ -18,11 +23,14 @@ object Dependencies {
     const val supportAnnotations = "com.android.support:support-annotations:_"
     const val cardView = "com.android.support:cardview-v7:_"
     const val recyclerview = "androidx.recyclerview:recyclerview:_"
+
+    /*dagger*/
     const val dagger = "com.google.dagger:dagger:_"
     const val daggerCompiler = "com.google.dagger:dagger-compiler:_"
     const val daggerAndroid = "com.google.dagger:dagger-android:_"
     const val daggerAndroidSupport = "com.google.dagger:dagger-android-support:_"
     const val daggerAndroidProcessor = "com.google.dagger:dagger-android-processor:_"
+
 
     const val androidLegacySupportV4 = "androidx.legacy:legacy-support-v4:_"
 
