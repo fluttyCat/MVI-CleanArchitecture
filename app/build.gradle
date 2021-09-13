@@ -8,22 +8,22 @@ plugins {
 }
 
 android {
-    buildToolsVersion(ConfigData.buildToolsVersion)
-    compileSdkVersion(ConfigData.compileSdkVersion)
+    buildToolsVersion(Android.buildToolsVersion)
+    compileSdkVersion(Android.compileSdkVersion)
 
     defaultConfig {
-        applicationId(ConfigData.applicationId)
-        minSdkVersion(ConfigData.minSdkVersion)
-        targetSdkVersion(ConfigData.targetSdkVersion)
-        versionCode = ConfigData.versionCode
-        versionName = ConfigData.versionName
+        applicationId(Android.applicationId)
+        minSdkVersion(Android.minSdkVersion)
+        targetSdkVersion(Android.targetSdkVersion)
+        versionCode = Android.versionCode
+        versionName = Android.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
 
-        getByName(ConfigData.RELEASE) {
+        getByName(Android.RELEASE) {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 
