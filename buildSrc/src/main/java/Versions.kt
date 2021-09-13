@@ -8,5 +8,6 @@ object Versions {
     const val material = "1.4.0"
     const val constraintLayout = "2.1.0"
     const val jUnit = "4.12"
+    const val hilt = "2.38.1"
 
 }

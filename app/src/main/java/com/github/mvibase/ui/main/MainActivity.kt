@@ -1,9 +1,11 @@
-package com.github.mvibase
+package com.github.mvibase.ui.main
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.fluttycatgeek.mvi_cleanarchitecture.R
+import androidx.appcompat.app.AppCompatActivity
+import com.github.mvibase.R
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
