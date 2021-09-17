@@ -23,7 +23,6 @@ abstract class BaseMviFragment<VB : ViewDataBinding> : Fragment() {
             container,
             false
         )
-
         return dataBinding.root
     }
 
