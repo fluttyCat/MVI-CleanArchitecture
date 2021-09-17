@@ -1,4 +1,4 @@
-package com.github.mvibase.base
+package com.github.mvibase.presentation
 
 import androidx.lifecycle.ViewModel
 
