@@ -3,7 +3,7 @@ package com.github.mvibase.presentation
 import androidx.lifecycle.ViewModel
 
 
-abstract class BaseMviViewModel<I : BaseMviIntent, A : BaseMviAction, S : BaseMviViewState, E : BaseMviViewEvent>
+abstract class MviViewModel<I : MviIntent, A : BaseMviAction, S : MviViewState, E : MviViewEvent>
     : ViewModel() {
 
     companion object {

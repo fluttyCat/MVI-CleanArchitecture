@@ -4,28 +4,29 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.databinding.DataBindingUtil
-import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
+import androidx.viewbinding.ViewBinding
 
-abstract class BaseMviFragment<VB : ViewDataBinding> : Fragment() {
+abstract class BaseMviFragment<VB : ViewBinding> : Fragment() {
 
-    lateinit var dataBinding: VB
+    lateinit var binding: VB
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        dataBinding = DataBindingUtil.inflate(
-            LayoutInflater.from(context),
-            getResourceLayoutId(),
-            container,
-            false
-        )
-        return dataBinding.root
+    ): View = binding.root
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        onViewInitialized(binding)
+        initView(savedInstanceState)
     }
 
-    abstract fun getResourceLayoutId(): Int
+    open fun onViewInitialized(binding: ViewBinding) {
 
+    }
+    open fun initView(savedInstanceState: Bundle?) {
+
+    }
 }
