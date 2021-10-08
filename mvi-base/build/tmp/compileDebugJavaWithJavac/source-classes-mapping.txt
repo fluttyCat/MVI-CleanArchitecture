@@ -1,0 +1,2 @@
+com/example/mvibase/BuildConfig.java
+ com.example.mvibase.BuildConfig
